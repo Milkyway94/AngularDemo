@@ -1,0 +1,5 @@
+<h1>{{post?.name}}</h1>
+<p>{{post?.description}}</p>
+<div class="actions" *ngIf="config.data">
+    <button class="button" (click)="onClose()">OK</button>
+</div>

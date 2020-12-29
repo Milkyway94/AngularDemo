@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let post of postList">
+        <a [routerLink]="['/post', post.name]" routerLinkActive="router-link-active">by Id: {{post.name}}</a>
+        <button (click)="showDetail(post)">by state: {{post.name}}</button>
+        <button (click)="showDialog(post)">by dialog: {{post.name}}</button>
+    </li>
+</ul>
